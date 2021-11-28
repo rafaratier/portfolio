@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: rgb(255 , 255 , 255 , 0.95);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  position: absolute;
+}
+
+.selectedOn {
+  background-color: gray;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
+
+.header {
+  background-color: black;
+  border-bottom: 1px solid gray;
+  height: 70px;
+  position: fixed;
+  width: 50%;
+  z-index: 1;
+}
+
+.header header {
+  font-size: 22px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.header #funcionamento {
+  color: rgb(255 , 255 , 255 , 0.7);
+  font-size: 12px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+#lista-tarefas {
+  left: 45px;
+  margin-bottom: 60px;
+  margin-top: 70px;
+  position: relative;
+  width: 300px;
+  z-index: 0;
+}
+
+#texto-tarefa {
+  appearance: none;
+  background-color: black;
+  border: none;
+  border-top: 2px solid gray;
+  bottom: 0;
+  caret-color: gray;
+  color: rgb(255 , 255 , 255 , 0.95);
+  font-size: 20px;
+  height: 60px;
+  position: fixed;
+  outline: none;
+  width: 100%;
+}
+
+#texto-tarefa::placeholder {
+  font-size: 18px;
+}
+
+#texto-tarefa::selection {
+  background-color: white;
+  color: black;
+}
+
+.nav-bar {
+  border-left: 2px solid gray;
+  height: 100%;
+  margin-top: 0;
+  position: fixed;
+  right: 0;
+  width: 50%;
+}
+
+.panel {
+  margin-top: 150px;
+  margin-left: 20px;
+}
+
+.buttons {
+  background-color: rgb(255 , 255 , 255 , 0.5);
+  border: none;
+  color: black;
+  height: 50px;
+  margin: 20px;
+  width: 170px;
+}
+
+.buttons:focus:active {
+  background-color: rgb(255 , 255 , 255 , 0.2);
+}
